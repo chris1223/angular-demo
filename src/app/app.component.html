@@ -20,26 +20,13 @@
     <hr class="sidebar-divider my-0" />
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: false}">
+    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
       <a class="nav-link" routerLink="/">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a
       >
     </li>
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" routerLink="page1">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Page1</span></a
-      >
-    </li>
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="page2">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Page2</span></a
-          >
-        </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider" />
 
@@ -76,7 +63,7 @@
     </li>
 
     <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
+    <li class="nav-item" routerLinkActive="active">
       <a
         class="nav-link collapsed"
         href="#"
@@ -96,7 +83,7 @@
       >
         <div class="bg-white py-2 collapse-inner rounded">
           <h6 class="collapse-header">Custom Utilities:</h6>
-          <a class="collapse-item" href="utilities-color.html">Colors</a>
+          <a class="collapse-item" routerLink="/utilites/colors">Colors</a>
           <a class="collapse-item" href="utilities-border.html">Borders</a>
           <a class="collapse-item" href="utilities-animation.html"
             >Animations</a
@@ -149,16 +136,16 @@
     </li>
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
-      <a class="nav-link" href="charts.html">
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/charts']" >
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Charts</span></a
       >
     </li>
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/tables']">
         <i class="fas fa-fw fa-table"></i>
         <span>Tables</span></a
       >
